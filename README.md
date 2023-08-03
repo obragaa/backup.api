@@ -39,6 +39,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+---
+
 ## Configuração das APIs
 
 Para configurar as APIs que você deseja fazer backup, adicione as informações de autenticação (por exemplo, tokens de acesso) no arquivo `api/tokens.json`. O formato do arquivo deve ser semelhante ao seguinte:
@@ -59,6 +61,8 @@ Para configurar as APIs que você deseja fazer backup, adicione as informações
 
 Certifique-se de substituir `"SEU_TOKEN_API_1"`, `"SEU_TOKEN_API_2"` e `"SEU_TOKEN_API_3"` pelos tokens de autenticação reais para cada API específica que você deseja fazer backup.
 
+---
+
 ## Executando o Projeto
 
 Para fazer o backup dos dados da API e salvar em arquivos CSV, execute o arquivo `main.py`:
@@ -69,9 +73,13 @@ python main.py
 
 Os dados coletados de cada API serão salvos em arquivos CSV separados no diretório `output/`.
 
+---
+
 ## Enviando os Dados para o Banco de Dados
 
 Após coletar os dados e salvá-los em arquivos CSV, você pode utilizar os arquivos para enviar os dados a um banco de dados para armazenamento permanente. Para isso, você pode criar um script que leia os arquivos CSV e insira os dados no banco de dados. O arquivo `output/save_to_csv.py` já contém a lógica para salvar os dados em CSV, e você pode adaptá-lo para enviar os dados para o banco de dados.
+
+---
 
 ## Estrutura de Arquivos
 
@@ -92,12 +100,9 @@ meu_projeto_backup/
 └── README.md
 ```
 
+---
+
 ## Contribuição
 
 Se você deseja contribuir para este projeto, sinta-se à vontade para criar um fork e enviar um pull request com suas melhorias!
 
----
-
-  /\_/\  
- ( o.o ) 
-  > ^ <
