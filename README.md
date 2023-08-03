@@ -95,3 +95,9 @@ meu_projeto_backup/
 ## Contribuição
 
 Se você deseja contribuir para este projeto, sinta-se à vontade para criar um fork e enviar um pull request com suas melhorias!
+
+---
+
+  /\_/\  
+ ( o.o ) 
+  > ^ <
