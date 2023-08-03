@@ -86,7 +86,3 @@ Certifique-se de substituir `"SEU_TOKEN_API_1"`, `"SEU_TOKEN_API_2"` e `"SEU_TOK
 ## Contribuição
 
 Se você deseja contribuir para este projeto, sinta-se à vontade para criar um fork e enviar um pull request com suas melhorias!
-
----
-
-Espero que esse README.md seja útil e forneça instruções claras sobre como configurar o projeto e instalar as dependências usando o `requirements.txt`. Sinta-se à vontade para personalizá-lo de acordo com as necessidades específicas do seu projeto. Boa sorte!
