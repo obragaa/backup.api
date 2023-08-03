@@ -34,8 +34,8 @@ if __name__ == "__main__":
 
     # Hora inicial do dia (00:00:00)
     start_date = datetime(data_atual.year, data_atual.month, data_atual.day, 0, 0, 0)
-    start_date_str = "2023-07-29 00:00:00"
-    start_date = datetime.fromisoformat(start_date_str.replace("Z", "+00:00"))
+    #start_date_str = "2023-07-29 00:00:00"
+    #start_date = datetime.fromisoformat(start_date_str.replace("Z", "+00:00"))
 
     # Hora final do dia (23:59:59)
     end_date = datetime(data_atual.year, data_atual.month, data_atual.day, 23, 59, 59)
