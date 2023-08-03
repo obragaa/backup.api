@@ -2,18 +2,23 @@
 
 import csv
 
-def save_data_to_csv(data, filename):
-    # data é uma lista de dicionários com os dados coletados.
-    # filename é o nome do arquivo CSV que você deseja salvar.
+def save_data_to_csv(data_list, file_path, api_name):
+    # Lista de campos que serão escritos no arquivo CSV
+    fieldnames = ['id', 'time', 'value', 'variable', 'device']
 
-    # Defina os nomes das colunas do CSV. 
-    # Certifique-se de que os nomes das colunas correspondam às chaves dos dicionários em "data".
-    fieldnames = ["api_name", "data"]
-
-    # Escreve os dados no arquivo CSV.
-    with open(filename, mode="w", newline="") as file:
+    # Abrir o arquivo CSV em modo de escrita
+    with open(file_path, mode='a', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerows(data)
 
-    print(f"Dados salvos com sucesso no arquivo {filename}")
+        # Escrever os cabeçalhos do arquivo CSV
+        writer.writeheader()
+
+        # Escrever cada dicionário na lista como uma linha no arquivo CSV
+        for item in data_list:
+            writer.writerow({
+                'id': item.get('id', ''),  # Use .get() para lidar com campos ausentes
+                'time': item.get('time', ''),
+                'value': item.get('value', ''),
+                'variable': item.get('variable', ''),
+                'device': f'{api_name}'
+            })
