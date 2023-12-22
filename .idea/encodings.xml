@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/files/Bancada.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/files/Programação CAM.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/files/Projeto.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/files/Usinagem CNC.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/files/Usinagem Convencional (clean).csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/files/Usinagem Convencional.csv" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/files/request_info.txt" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/request_info.txt" charset="windows-1252" />
+  </component>
+</project>

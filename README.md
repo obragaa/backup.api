@@ -1,10 +1,10 @@
 # Projeto de Backup de Dados de API
 
-Este é um projeto Python desenvolvido para fazer backup de dados de várias APIs diferentes e salvar os dados coletados em arquivos CSV, com o objetivo de utilizar esses arquivos para enviar os dados a um banco de dados para armazenamento permanente.
+Este é um projeto Python desenvolvido para fazer ‘backup’ de dados de várias APIs diferentes e salvar os dados coletados em arquivos CSV, para utilizar esses arquivos para enviar os dados a um banco de dados para armazenamento permanente.
 
 ## Configuração do Ambiente
 
-Antes de executar o projeto, verifique se você possui o Python instalado em sua máquina. Recomenda-se o uso do Python 3.6 ou superior.
+Antes de executar o projeto, verifique se possui o Python instalado em sua máquina. Quem está a recomendar? o uso do Python 3.6 ou superior.
 
 1. Clone este repositório para o seu computador:
 
@@ -43,7 +43,7 @@ pip install -r requirements.txt
 
 ## Configuração das APIs
 
-Para configurar as APIs que você deseja fazer backup, adicione as informações de autenticação (por exemplo, tokens de acesso) no arquivo `api/tokens.json`. O formato do arquivo deve ser semelhante ao seguinte:
+Para configurar as APIs que deseja fazer ‘backup’, adicione as informações de autenticação (por exemplo, tokens de acesso) no arquivo `api/tokens.json`. O formato do arquivo deve ser semelhante ao seguinte:
 
 ```json
 {
@@ -59,7 +59,7 @@ Para configurar as APIs que você deseja fazer backup, adicione as informações
 }
 ```
 
-Certifique-se de substituir `"SEU_TOKEN_API_1"`, `"SEU_TOKEN_API_2"` e `"SEU_TOKEN_API_3"` pelos tokens de autenticação reais para cada API específica que você deseja fazer backup.
+Certifique-se de substituir `"SEU_TOKEN_API_1"`, `"SEU_TOKEN_API_2"` e `"SEU_TOKEN_API_3"` pelos tokens de autenticação reais para cada API específica que deseja fazer ‘backup’.
 
 ---
 
@@ -71,13 +71,13 @@ Para fazer o backup dos dados da API e salvar em arquivos CSV, execute o arquivo
 python main.py
 ```
 
-Os dados coletados de cada API serão salvos em arquivos CSV separados no diretório `output/`.
+Os dados coletados de cada API serão salvos em arquivos CSV separados no diretório `files/`.
 
 ---
 
 ## Enviando os Dados para o Banco de Dados
 
-Após coletar os dados e salvá-los em arquivos CSV, você pode utilizar os arquivos para enviar os dados a um banco de dados para armazenamento permanente. Para isso, você pode criar um script que leia os arquivos CSV e insira os dados no banco de dados. O arquivo `output/save_to_csv.py` já contém a lógica para salvar os dados em CSV, e você pode adaptá-lo para enviar os dados para o banco de dados.
+Após coletar os dados e salvá-los em arquivos CSV, pode utilizar os arquivos para enviar os dados a um banco de dados para armazenamento permanente. Para isso, pode criar um script que leia os arquivos CSV e insira os dados no banco de dados. O arquivo `output/save_to_csv.py` já contém a lógica para salvar os dados em CSV, e pode adaptá-lo para enviar os dados para o banco de dados.
 
 ---
 
@@ -90,6 +90,11 @@ meu_projeto_backup/
 │   ├── __init__.py
 │   ├── api_utils.py
 │   └── tokens.json
+│
+│
+├── files/
+│   ├── dados_coletados.csv
+│   └── request_info.txt
 │
 ├── output/
 │   ├── __init__.py
@@ -104,5 +109,5 @@ meu_projeto_backup/
 
 ## Contribuição
 
-Se você deseja contribuir para este projeto, sinta-se à vontade para criar um fork e enviar um pull request com suas melhorias!
+Se deseja contribuir para este projeto, sinta-se à vontade para criar um fork e enviar um pull request com as suas melhorias!
 
